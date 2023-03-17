@@ -67,6 +67,9 @@ terraform {
   }
 }
 ```
+
+![](./images/create%20backend%20file.png)
+
 ## STEP 2: Refactoring The Codes Using Module
 
 - Creating a folder called **modules**
