@@ -196,10 +196,18 @@ terraform {
 
 ![](./images/terraform%20state%20json.png)
 
+- We need to run **terraform plan** or **terraform apply** to see the new lock ID generared in our dynamodb
+
+`terraform plan`
+`terraform apply`
+
 ![](./images/dynamodb%20item.png)
 
 
+
 ![](./images/terraform%20plan%20finale.png)
+
+- Confirm lock ID has been created
 
 ![](./images/dynamodb%20item%20final.png)
 
