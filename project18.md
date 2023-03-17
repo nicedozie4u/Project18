@@ -211,7 +211,7 @@ terraform {
 
 ![](./images/dynamodb%20item%20final.png)
 
-- **NOTE**: Before we can destroy our infrastructure, we have to comment out our *backend.tf* config. If this is not done, terraform would delete the s3 bucket and our state files in it.
+- **NOTE**: Before we can destroy our infrastructure, first run **terraform init**, then we have to comment out our *backend.tf* config. If this is not done, terraform would delete the s3 bucket and our state files in it.
 
 ![](./images/terraform%20init%20before%20destroy.png)
 
