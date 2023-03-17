@@ -84,47 +84,46 @@ terraform {
 
 **outputs.tf**
 
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/output%20for%20vpc.png)
+![](./images/vpc%20output.png)
 
 - Refactoring the code for **ALB** folder:
 
 **variables.tf**
 
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/variables%20for%20ALB.png)
+![](./images/alb%20variables.png)
 
 **outputs.tf**
 
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/output%20for%20ALB.png)
+![](./images/alb%20outputs.png)
 
 - Refactoring the code for **Autoscaling** folder:
 
 **variables.tf**
 
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/variables%20for%20asg.png)
+![](./images/autoscaling%20variables.png)
 
 - Refactoring the code for **security** folder:
 
 **outputs.tf**
 
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/outputs%20for%20sg.png)
+![](./images/security%20outputs.png)
 
 - Refactoring the code for **EFS** folder:
 
 **variables.tf**
 
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/variables%20for%20efs.png)
+![](./images/efs%20variables.png)
 
 - Refactoring the code for **RDS** folder:
 
 **variables.tf**
 
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/variables%20for%20rds.png)
+![](./images/rds%20variables.png)
 
 - Refactoring the code the root **main.tf** folder:
 
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/main.tf.png)
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/main.tf-2.png)
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/main.tf-3.png)
+![](./images/root%20main.png)
+![](./images/root%20main02.png)
 
 - The complete code structure is stored in this [repo](https://github.com/nicedozie4u/PBL-project-18)
 
