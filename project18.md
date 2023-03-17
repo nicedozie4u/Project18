@@ -180,6 +180,8 @@ terraform {
 
 ![](./images/final%20terraform%20init.png)
 
+- Confirm state files in your s3 bucket
+
 ![](./images/final%20bucket%20object.png)
 
 ![](./images/final%20bucket%20object02.png)
