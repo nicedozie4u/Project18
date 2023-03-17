@@ -211,6 +211,8 @@ terraform {
 
 ![](./images/dynamodb%20item%20final.png)
 
+- **NOTE**: Before we can destroy our infrastructure, we have to comment out out *backend.tf* config. If this is not done, terraform would delete the s3 bucket and our state files in in.
+
 ![](./images/terraform%20init%20before%20destroy.png)
 
 ![](./images/terraform%20destroy.png)
@@ -218,3 +220,7 @@ terraform {
 ![](./images/destroy%20complete.png)
 
 ## THE END!!!
+
+- In this project we succesfully refactored our infrastructure we had in project17 into Modules.
+
+- We have also migrated our state file from our local system to our s3 bucket and used dynamodb to lock the state files.
