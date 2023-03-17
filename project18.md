@@ -1,6 +1,6 @@
 # AUTOMATING INFRASTRUCTURE WITH IAC USING TERRAFORM PART 3 – REFACTORING
 ## INTRODUCTION
-In continuation to [Project 17](https://github.com/somex6/Darey.io-Projects/blob/main/project17.md), the entire code is refactored inorder to simplify the code using a Terraform tool called **Module**.
+In continuation to [Project 17](https://github.com/nicedozie4u/Project17/blob/main/project17.md), the entire code is refactored inorder to simplify the code using a Terraform tool called **Module**.
 
 The following outlines detailed step taken to achieve this:
 
@@ -41,9 +41,9 @@ resource "aws_dynamodb_table" "terraform_locks" {
 ```
 - Since Terraform expects that both S3 bucket and DynamoDB resources are already created before configuring the backend, executing terraform apply command:
 
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/terraform%20init.png)
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/first%20terraform%20apply.png)
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/first%20terraform%20apply-2.png)
+![](./images/module00.png)
+![](./images/module01.png)
+![](./images/terraform%20init.png)
 ![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/first%20terraform%20apply-3.png)
 ![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/dynamodb.png)
 ![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/terraform.tfstate%20created.png)
@@ -116,7 +116,7 @@ terraform {
 ![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/main.tf-2.png)
 ![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/main.tf-3.png)
 
-- The complete code structure is stored in this [repo](https://github.com/somex6/terraform-cloud)
+- The complete code structure is stored in this [repo](https://github.com/nicedozie4u/PBL-project-18)
 
 ## STEP 3: Executing The Terraform Plan
 
