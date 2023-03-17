@@ -9,7 +9,7 @@ By default the Terraform state is stored locally, to store it remotely on AWS us
 - Creating a file called **Backend.tf** and entering the following code:
 ```
 resource "aws_s3_bucket" "terraform-state" {
-  bucket = "somex-terraform"
+  bucket = "dozie2-dev-terraform-bucket"
   force_destroy = true
 }
 resource "aws_s3_bucket_versioning" "version" {
