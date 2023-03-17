@@ -174,6 +174,8 @@ terraform {
 
 ![](./images/dynamodb%20table.png)
 
+- We need to run terraform init command to migrate our state files from our local system to the remote s3 bucket
+
 ![](./images/final%20terraform%20init.png)
 
 ![](./images/final%20bucket%20object.png)
@@ -191,6 +193,7 @@ terraform {
 ![](./images/terraform%20state%20json.png)
 
 ![](./images/dynamodb%20item.png)
+
 
 ![](./images/terraform%20plan%20finale.png)
 
