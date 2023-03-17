@@ -221,6 +221,6 @@ terraform {
 
 ## THE END!!!
 
-- In this project we succesfully refactored our infrastructure we had in project17 into Modules.
+- In this project we successfully refactored our infrastructure we created in project17 into Modules.
 
 - We have also migrated our state file from our local system to our s3 bucket and used dynamodb to lock the state files.
