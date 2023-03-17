@@ -135,6 +135,8 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "first" {
   }
 }
 ```
+- Note that to use S3 as a backend, you need to enable versioning on the bucket.
+
 - Adding the following code which creates a DynamoDB table to handle locks and perform consistency checks:
 ```
 resource "aws_dynamodb_table" "terraform_locks" {
@@ -199,3 +201,5 @@ terraform {
 ![](./images/terraform%20destroy.png)
 
 ![](./images/destroy%20complete.png)
+
+## THE END!!!
