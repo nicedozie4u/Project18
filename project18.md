@@ -152,7 +152,7 @@ resource "aws_dynamodb_table" "terraform_locks" {
 ![](./images/create%20s3bucket.png)
 
 
-- Create a file called backend.tf and enter the following code to configure the backend:
+- Create a file called **backend.tf** and enter the following code to configure the backend:
 ```
 terraform {
   backend "s3" {
