@@ -168,4 +168,6 @@ terraform {
 ![](./images/create%20backend%20file.png)
 
 
-![](./images/)
+![](./images/s3-bucket%20created.png)
+
+![](./images/dynamodb%20table.png)
