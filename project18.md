@@ -135,4 +135,28 @@ terraform {
 
 - Testing the configuration by running the command **terraform plan**
 
+![](./images/terraform%20plan11.png)
 
+**terraform apply**
+
+![](./images/terraform%20apply00.png)
+
+![](./images/terraform%20apply01.png)
+
+![](./images/terraform%20apply03.png)
+
+![](./images/terraform%20apply%20complete.png)
+
+- Confirm infrastructure created 
+
+![](./images/ec2-instances.png)
+
+![](./images/sg.png)
+
+![](./images/vpc.png)
+
+![](./images/subnets.png)
+
+![](./images/rtb.png)
+
+![](./images/)
