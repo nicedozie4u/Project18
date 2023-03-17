@@ -41,12 +41,8 @@ resource "aws_dynamodb_table" "terraform_locks" {
 ```
 - Since Terraform expects that both S3 bucket and DynamoDB resources are already created before configuring the backend, executing terraform apply command:
 
-![](./images/module00.png)
-![](./images/module01.png)
-![](./images/terraform%20init.png)
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/first%20terraform%20apply-3.png)
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/dynamodb.png)
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/terraform.tfstate%20created.png)
+![](./images/)
+
 
 - Entering the following code to configure the backend:
 ```
@@ -68,7 +64,7 @@ terraform {
 
 **pbl folder structure**
 
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/structure%20of%20pbl%20folder.png)
+![](./images/module00.png)
 
 - Refactoring the code for **VPC** folder:
 
@@ -122,13 +118,18 @@ terraform {
 
 - To ensure the validation of the whole setup, running the command **terraform validate**
 
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/terraform%20validate.png)
+![](./images/terraform%20validate.png)
 
 - Testing the configuration by running the command **terraform plan**
 
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/terraform%20plan.png)
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/terraform%20plan-2.png)
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/terraform%20plan-3.png)
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/terraform%20plan-4.png)
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/terraform%20plan-5.png)
-![](https://github.com/somex6/Darey.io-Projects/blob/main/img/project18/terraform%20plan-6.png)
+![](./images/terraform%20plan01.png)
+![](./images/terraform%20plan02.png)
+![](./images/terraform%20plan03.png)
+![](./images/terraform%20plan04.png)
+![](./images/terraform%20plan05.png)
+![](./images/terraform%20plan06.png)
+![](./images/terraform%20plan07.png)
+![](./images/terraform%20plan08.png)
+![](./images/terraform%20plan09.png)
+![](./images/terraform%20plan10.png)
+![](./images/terraform%20plan11.png)
