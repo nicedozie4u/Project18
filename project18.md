@@ -41,14 +41,25 @@ resource "aws_dynamodb_table" "terraform_locks" {
 ```
 - Since Terraform expects that both S3 bucket and DynamoDB resources are already created before configuring the backend, executing terraform apply command:
 
-![](./images/)
+![](./images/terraform%20init.png)
+![](./images/terraform%20plan01.png)
+![](./images/terraform%20plan02.png)
+![](./images/terraform%20plan03.png)
+![](./images/terraform%20plan04.png)
+![](./images/terraform%20plan05.png)
+![](./images/terraform%20plan06.png)
+![](./images/terraform%20plan07.png)
+![](./images/terraform%20plan08.png)
+![](./images/terraform%20plan09.png)
+![](./images/terraform%20plan10.png)
+![](./images/terraform%20plan11.png)
 
 
 - Entering the following code to configure the backend:
 ```
 terraform {
   backend "s3" {
-    bucket         = "dozie1-dev-terraform-bucket"
+    bucket         = "dozie2-dev-terraform-bucket"
     key            = "global/s3/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-locks"
@@ -122,14 +133,4 @@ terraform {
 
 - Testing the configuration by running the command **terraform plan**
 
-![](./images/terraform%20plan01.png)
-![](./images/terraform%20plan02.png)
-![](./images/terraform%20plan03.png)
-![](./images/terraform%20plan04.png)
-![](./images/terraform%20plan05.png)
-![](./images/terraform%20plan06.png)
-![](./images/terraform%20plan07.png)
-![](./images/terraform%20plan08.png)
-![](./images/terraform%20plan09.png)
-![](./images/terraform%20plan10.png)
-![](./images/terraform%20plan11.png)
+
