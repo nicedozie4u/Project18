@@ -110,21 +110,11 @@ The following outlines detailed step taken to achieve this:
 
 ![](./images/rtb.png)
 
-**Now we are going to introduce Backend on S3.**
 
-So far, we have been using the default backend, which is the local backend – it requires no configuration, and the states file is stored locally. This mode can be suitable for learning purposes, but it is not a robust solution, so it is better to store it in some more reliable and durable storage.
-
-The second problem with storing this file locally is that, in a team of multiple DevOps engineers, other engineers will not have access to a state file stored locally on your computer
-
-To solve this, we will need to configure a backend where the state file can be accessed remotely other DevOps team members. There are plenty of different standard backends supported by Terraform that you can choose from. Since we are already using AWS – we can choose an S3 bucket as a backend.
-
-Another useful option that is supported by S3 backend is State Locking – it is used to lock your state for all operations that could write state. This prevents others from acquiring the lock and potentially corrupting your state. State Locking feature for S3 backend is optional and requires another AWS service – DynamoDB.
-
-Create an S3 bucket to store Terraform state file with a unique name
 
 ## Configuring A Backend On The S3 Bucket
 By default the Terraform state is stored locally, to store it remotely on AWS using S3 bucket as the backend and also making use of DynamoDB as the State Locking the following setup is done:
-- Creating a file called **Backend.tf** and entering the following code:
+- Create a file called **main.tf** in the root directory and enter the following code:
 ```
 resource "aws_s3_bucket" "terraform-state" {
   bucket = "dozie2-dev-terraform-bucket"
@@ -162,7 +152,7 @@ resource "aws_dynamodb_table" "terraform_locks" {
 ![](./images/create%20s3bucket.png)
 
 
-- Entering the following code to configure the backend:
+- Create a file called backend.tf and enter the following code to configure the backend:
 ```
 terraform {
   backend "s3" {
